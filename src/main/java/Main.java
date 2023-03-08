@@ -1,11 +1,10 @@
-package org.tcc;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+
         if (args.length != 1) {
             System.err.println("Error: it is necessary to pass the path and file name as an argument.");
             return;

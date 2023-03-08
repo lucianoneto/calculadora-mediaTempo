@@ -1,0 +1,74 @@
+CPN Tools report for simulation replications
+Net: /cygdrive/C/Users/Luciano/Desktop/Rede de Petri Neural.cpn
+Output directory: /cygdrive/C/Users/Luciano/Desktop/output/reps_3
+
+Simulation no.: 1
+Steps.........: 64
+Model time....: 3.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 2
+Steps.........: 66
+Model time....: 7.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 3
+Steps.........: 67
+Model time....: 5.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 4
+Steps.........: 66
+Model time....: 7.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 5
+Steps.........: 67
+Model time....: 3.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 6
+Steps.........: 65
+Model time....: 4.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 7
+Steps.........: 67
+Model time....: 4.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 8
+Steps.........: 67
+Model time....: 4.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 9
+Steps.........: 65
+Model time....: 4.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
+Simulation no.: 10
+Steps.........: 64
+Model time....: 4.0
+Stop reason...: No more enabled transitions!
+Time to run simulation: 0 seconds
+
+
