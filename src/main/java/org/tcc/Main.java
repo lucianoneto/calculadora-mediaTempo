@@ -2,15 +2,16 @@ package org.tcc;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        if (args.length != 1) {
+            System.err.println("Error: it is necessary to pass the path and file name as an argument.");
+            return;
+        }
 
-        String nameFile = "C:\\Users\\Luciano\\IdeaProjects\\calcula-mediaTempo\\src\\main\\resources\\replication_report100x20.txt";
-
-        //String nameFile = args[0];
+        String nameFile = args[0];
 
         int executionsNumber = 0;
         float timeValue = 0.0f;
@@ -19,13 +20,17 @@ public class Main {
             while (scannerNew.hasNextLine()) {
                 String currentLine = scannerNew.nextLine();
 
-                if (!currentLine.isBlank()) {
-                    String[] line = currentLine.trim().split("\\s+");
-                    if (Objects.equals(line[1], "time....:")) {
-                        executionsNumber++;
-                        timeValue += Float.parseFloat(line[2]);
-                    }
+                if (currentLine.isBlank())
+                    continue;
+
+                String[] line = currentLine.trim().split("\\s+");
+
+                if (line[1].equals("time....:")) {
+                    executionsNumber++;
+                    float currentValue = Float.parseFloat(line[2]);
+                    timeValue += currentValue;
                 }
+
             }
         }
 
