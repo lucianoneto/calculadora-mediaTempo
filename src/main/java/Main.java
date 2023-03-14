@@ -14,6 +14,8 @@ public class Main {
 
         int executionsNumber = 0;
         float timeValue = 0.0f;
+        float timeMaximum = 0.0f;
+        float timeMinimum = 1000.0f;
 
         try (Scanner scannerNew = new Scanner(new FileReader(nameFile))) {
             while (scannerNew.hasNextLine()) {
@@ -28,12 +30,18 @@ public class Main {
                     executionsNumber++;
                     float currentValue = Float.parseFloat(line[2]);
                     timeValue += currentValue;
+                    if(timeMaximum < currentValue)
+                        timeMaximum = currentValue;
+                    if(timeMinimum > currentValue)
+                        timeMinimum = currentValue;
                 }
 
             }
         }
 
-        float average = (executionsNumber != 0) ? (timeValue / executionsNumber) : 0.0f;
-        System.out.println(average);
+        float timeAverage = (executionsNumber != 0) ? (timeValue / executionsNumber) : 0.0f;
+        System.out.println("Average: " + timeAverage);
+        System.out.println("Maximum: " + timeMaximum);
+        System.out.println("Minimum: " + timeMinimum);
     }
 }
